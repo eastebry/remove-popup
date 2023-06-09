@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Modal Remover",
+  "version": "1.0",
+  "description": "Removes one very annoying modal",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://cooking.nytimes.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
